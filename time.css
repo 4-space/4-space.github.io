@@ -1,0 +1,36 @@
+/* 13. Basic Styling with CSS */
+
+/* Style the lines by removing the fill and applying a stroke */
+.line {
+    fill: none;
+
+    stroke: #ffab00;
+    stroke-width: 1;
+}
+
+/* Style the dots by assigning a fill and stroke */
+.dot {
+    fill: #ffab00;
+    stroke: #fff;
+}
+
+#time-series {
+    display: block;
+    width: 600;
+    height: 400;
+    flex: 1;
+    padding-left: 10%;
+}
+
+div.tooltip {
+  color: white;
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  height: 28px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: rgba(0,0,0,.8);
+  border: 2px solid black;
+  pointer-events: none;
+}

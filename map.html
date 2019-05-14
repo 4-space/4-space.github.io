@@ -1,0 +1,65 @@
+<html>
+<head>
+    <link rel='stylesheet' href='map.css'/>
+    <link rel='stylesheet' href='time.css'/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script> src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js" </script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+    <h1 class='banner'>The Deportation Informatics Project</h1>
+    
+    <ul class='nav'>
+        <li class='nav_el'><h2><a href='index.html'>About</a></h2></li>
+        <li class='nav_el'><h2><a href='map.html'>Informatics</a></h2></li>
+        <li class='nav_el'><h2><a href='timeline.html'>Timeline</a></h2></li>
+    </ul>
+    
+    
+    
+    <div class='informatics'>
+        <div class='text'>
+            <strong>Cloropleth Map</strong>
+            <p>This map illustrates the geospatial density of deportations in the United States. This is accompanied by the data that generates it. This geospatial data reflect what is already known about deporations, that most of them happen at the border, but can also reveal anomalies in deportation/policy based on location if we had more information. For example, how does the number of asylum cases approved vary by state? </p></div>
+        <div class='map_con'>
+        <div id='map'></div>
+        </div>
+    </div>
+   
+    <div class='informatics'>
+        <div id='time-con'>
+        <div id='time-series'></div>
+        </div>
+         <div class='text'>
+             <strong>Line Chart</strong>
+            <p>This is a line chart of the number of undocumented people deported between October 2007 and September 2012 as reported by the ICE. The time presented within the sourse data was in the federal government's fiscal years, so October 2007 is actually October 2006 in calender months. From the chart we can see that deportation numbers have been slowly and steadily increasing.</p></div>
+    </div>
+    
+    <div class='informatics'>
+        <div class='text'>
+            <strong>Bar Graph</strong>
+            <p>This chart represents the age demographics of those who cross the border undocumented. We can see from the graph that the majority of those deported are in the 18-24 age group. Those that are younger are deporated at a far lesser rate. The proportion of those deported steadily decreases we go up the age groups. Note that these numbers are the raw numbers per age group. If we had an accurate estimate of the total number of undocumented peoples we could answer the question of "How much more likely is one age group to be deported than another age group?". Since we don't know the underlying age demographics of those who come to the United States undocumented, it is more difficult to answer this question. How much have the narritives of childhood excellence reflected in the age groups deported narrative?</p></div>
+        <div id='bar_con'>
+        <div id='barch'>  <svg id='try_this'/></div>
+          
+        </div>
+    </div>
+    
+    <h2 class="ref"> References</h2>
+    <hr/>
+
+<ul class="ref">
+    <li>[1] Trac Immigration https://trac.syr.edu/immigration/</li>
+    <li>[2]<a href='https://www.ice.gov/doclib/about/offices/ero/pdf/ero-removals1.pdf'>https://www.ice.gov/doclib/about/offices/ero/pdf/ero-removals1.pdf</a></li>
+</ul>
+    
+    
+    <script type="text/javascript" src="us-states.js"></script>
+    <script type="text/javascript" src="map.js"></script>
+    <script type="text/javascript" src="bar.js"></script>
+    <script type="text/javascript" src="time.js"></script>
+     
+</body>
+</html>

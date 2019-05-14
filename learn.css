@@ -1,0 +1,60 @@
+body {
+  background-color: #fff8ef;
+  font-family: Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+h2 {
+    display: inline;
+    margin: 100px;
+}
+
+ul {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.banner {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.nav_el h2 a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav_el h2 {
+    display: inline;
+    margin: 100px;
+}
+
+.nav {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+    
+li {
+    display: inline;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+}
+
+.empty {
+    margin: 5%;
+}
+
+.learn-box {
+    text-align: left;
+}
+
+.description {
+    text-indent: 6.5%;
+}
+
+.link {
+    display: block;
+    text-indent: 6.5%;
+}
